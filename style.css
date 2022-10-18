@@ -21,8 +21,11 @@
   align-items: center;
   justify-content: center;
 }
+#titlesMsg{
+  margin-bottom: 30px;
+  height: 15vh;
+}
 #title{
-  margin-bottom: 50px;
   background-color: #00ffff9a;
   text-align: center;
   width: 35%;
@@ -116,7 +119,7 @@
 @media(max-width: 874px){
   #title{
     min-width: 280px;
-    height: 10vh;
+    height: 70px;
     border-radius: 20px;
     font-size: 18px ;
   }
@@ -138,31 +141,19 @@
 }
 @media(max-width: 420px){
   .btnGame{
-    height: 10vh;
-    width: 10vh;
-    font-size: 35px;
+    height: 13vh;
+    width: 13vh;
   }
 }
-@media(max-width: 874px){
-  #title{
-    min-width: 280px;
-    height: 10vh;
-    border-radius: 20px;
-    font-size: 18px ;
-  }
+@media(max-width: 374px){
     #placar{
-      width: 230px;
-      border-radius: 15px;
-      font-size: 15px ; 
+      width: 230px; 
     }
     #msg{
       width: 280px;
-      border-radius: 15px;
-      font-size: 20px ;
     }
-}
-@media(max-width: 520px){
-  #title{
-    border-radius: 15px;
-  }
+    .btnGame{
+      height: 10vh;
+      width: 10vh;
+    }
 }
