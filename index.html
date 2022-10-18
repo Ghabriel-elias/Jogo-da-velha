@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- Script js -->
+  <script src="index.js" defer ></script>
+  <!-- Style Css -->
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo da velha JS</title>
+</head>
+<body>
+  <main id="main" data-escolha="x">
+ <div class="btn-submit" id="titlesMsg"> <h2 id="title">PREENCHA TODAS AS INFORMAÇÕES PARA SEGUIR PARA O JOGO DA VELHA</h2></div>
+ <div class="btn-submit" id="placar"></div>   
+ <div id="inputs">
+     <form class="form">
+      <div id="input1">
+        <div class="input-group mb-3">
+           <label for="nome1"><span class="input-group-text" id="basic-addon1">Player 1:</span></label>
+            <input type="text" class="form-control" id="name1" value="" placeholder="Digite aqui"  />
+        </div>
+        <label for="inputX1">X</label>
+        <input type="radio" id="inputX1" data-player1="X" name="firstInput" >
+        <label for="inputO1">O</label>
+        <input type="radio" id="inputO1" data-player1="O" name="firstInput" >
+       </div> 
+        <div id="input2">
+          <div class="input-group mb-3">
+            <label for="nome2"><span class="input-group-text" id="basic-addon1">Player 2:</span></label>
+             <input type="text" class="form-control" id="name2" value="" placeholder="Digite aqui" />
+         </div>
+          <label for="inputX2">X</label>
+          <input type="radio" id="inputX2" data-player2="X"  name="secondInput" >
+          <label for="inputO2">O</label>
+          <input type="radio" id="inputO2" data-player2="O" name="secondInput">
+        </div>
+       <span class="btn-submit"><button type="submit" id="submit" class="btn btn-primary">Confirmar</button></span>
+     </form> 
+   </div>
+    <div id="coluna1">
+   </div>
+   <div id="coluna2">
+   </div>
+   <div id="coluna3">
+   </div>
+   <div class="btn-submit" id="btn-reinicar"></div>
+  </main>
+</body>
+</html>
